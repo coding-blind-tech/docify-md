@@ -14,7 +14,7 @@ This program is simple to use. You first need to build the Docker image, and the
 ### Step-by-Step Instructions:
 1. **Build the Docker Image**:
     ```bash
-    docker build -t markdown-to-pdf .
+    docker build -t docify-md .
     ```
 
 2. **Run the Docker Container**:
@@ -24,7 +24,7 @@ This program is simple to use. You first need to build the Docker image, and the
       ```
     - For **PDF** output:
       ```bash
-      docker run --rm -v $(pwd):/app markdown-to-pdf input.md output.pdf pdf
+      docker run --rm -v $(pwd):/app docify-md example_input.md output.pdf pdf
       ```
 
 ### Arguments:

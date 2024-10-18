@@ -72,7 +72,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     md_file_path = sys.argv[1]
-    output_file_path = sys.argv[2]
+    output_file_path = f"output/{sys.argv[2]}"
     output_format = sys.argv[3]  # 'pdf' or 'docx'
 
     convert_md(md_file_path, output_file_path, output_format)
